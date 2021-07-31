@@ -18,6 +18,13 @@ a:hover {
   text-decoration: underline;
 }
 
+.wrapper {
+  max-width: 1080px;
+  padding: 0 4%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .year {
   font-size: 5rem;
   letter-spacing: 0;
@@ -34,6 +41,40 @@ a:hover {
   font-size: 4rem;
   letter-spacing: 0;
   font-weight: bold;
+}
+
+.section-title {
+  font-size: 2.0rem;
+  position: relative;
+}
+
+.section-title::before {
+  content: '';
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  display: inline-block;
+  border-left: solid 1px #5767bf;
+  border-top: solid 1px #5767bf;
+  top: 0;
+  left: 0;
+}
+
+.section-title::after {
+  content: '';
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  display: inline-block;
+  border-right: solid 1px #5767bf;
+  border-bottom: solid 1px #5767bf;
+  bottom: 0;
+  right: 0;
+}
+
+.section-title::first-letter {
+  color: #f7b52c;
+  font-size: 3.0rem;
 }
 
 #header {
@@ -127,5 +168,9 @@ a:hover {
 #main .remaining-days .counter {
   font-size: 2.0rem;
   text-align: center;
+}
+
+#about {
+  margin-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */

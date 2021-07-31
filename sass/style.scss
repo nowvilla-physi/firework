@@ -26,6 +26,14 @@ img {
 a:hover {
     text-decoration: underline;
 }
+
+.wrapper {
+    max-width: 1080px;
+    padding: 0 4%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .year {
     font-size: 5rem;
     letter-spacing: 0;
@@ -41,7 +49,41 @@ a:hover {
 .time {
     font-size: 4rem;
     letter-spacing: 0;
-        font-weight: bold;
+    font-weight: bold;
+}
+
+.section-title {
+    font-size: 2.0rem;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 20px;
+        height: 30px;
+        position: absolute;
+        display: inline-block;
+        border-left: solid 1px #5767bf;
+        border-top: solid 1px #5767bf;
+        top: 0;
+        left: 0;
+    }
+
+    &::after {
+        content: '';
+        width: 20px;
+        height: 30px;
+        position: absolute;
+        display: inline-block;
+        border-right: solid 1px #5767bf;
+        border-bottom: solid 1px #5767bf;
+        bottom: 0;
+        right: 0;
+    }
+
+    &::first-letter {
+        color: $accent-color;
+        font-size: 3.0rem;
+    }
 }
 
 // header.
@@ -58,7 +100,6 @@ a:hover {
     }
 
     #nav {
-
         position: absolute;
         top: 24px;
         left: 24px;
@@ -79,7 +120,6 @@ a:hover {
 
             .header-nav-item {
                 padding-right: 24px;
-
             }
         }
     }
@@ -132,7 +172,10 @@ a:hover {
             font-size: 2.0rem;
             text-align: center;
         }
-
-
     }
+}
+
+// about.
+#about {
+    margin-top: 40px;
 }
