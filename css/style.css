@@ -276,4 +276,57 @@ a:hover {
   font-size: 1.5rem;
   color: #f7b52c;
 }
+
+#news {
+  margin-top: 40px;
+}
+
+#news dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+#news dl dt {
+  width: 20%;
+  font-size: 1.2rem;
+  font-weight: normal;
+  padding: 16px 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+#news dl dt:nth-of-type(1) {
+  border-top: 1px solid #ffffff;
+}
+
+#news dl dd {
+  width: 80%;
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 16px 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+#news dl dd:nth-of-type(1) {
+  border-top: 1px solid #ffffff;
+}
+
+#news .view-more-wrapper {
+  margin-top: 32px;
+}
+
+#news .view-more-wrapper .view-more {
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 16px 64px;
+  border: solid 1px #ffffff;
+}
+
+#news .view-more-wrapper .view-more:hover {
+  text-decoration: none;
+  border: solid 1px #f7b52c;
+}
 /*# sourceMappingURL=style.css.map */
