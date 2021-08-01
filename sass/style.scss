@@ -1,8 +1,9 @@
 @charset "utf-8";
 
 $base-color: #1f2f54;
-$main-color: #ffffff;
-$accent-color: #f7b52c;
+$main-color: #f7b52c;
+$accent-color: #ffffff;
+$white: #ffffff;
 $black: #26272c;
 $transparent-gray: #ccc4c4c4;
 
@@ -16,7 +17,7 @@ body {
     font-family: 'Shippori Mincho B1', serif;
     letter-spacing: 3px;
     line-height: 1.7;
-    color: $main-color;
+    color: $white;
 }
 
 img {
@@ -34,54 +35,19 @@ a:hover {
     text-align: center;
 }
 
-.year {
-    font-size: 5rem;
-    letter-spacing: 0;
-    font-weight: bold;
-}
-
 .day {
     font-size: 4rem;
-    letter-spacing: 0;
+    letter-spacing: 1;
     font-weight: bold;
-}
-
-.time {
-    font-size: 4rem;
-    letter-spacing: 0;
-    font-weight: bold;
+    color: $main-color;
 }
 
 .section-title {
     font-size: 2.0rem;
     position: relative;
 
-    &::before {
-        content: '';
-        width: 20px;
-        height: 30px;
-        position: absolute;
-        display: inline-block;
-        border-left: solid 1px #5767bf;
-        border-top: solid 1px #5767bf;
-        top: 0;
-        left: 0;
-    }
-
-    &::after {
-        content: '';
-        width: 20px;
-        height: 30px;
-        position: absolute;
-        display: inline-block;
-        border-right: solid 1px #5767bf;
-        border-bottom: solid 1px #5767bf;
-        bottom: 0;
-        right: 0;
-    }
-
     &::first-letter {
-        color: $accent-color;
+        color: $main-color;
         font-size: 3.0rem;
     }
 }
@@ -126,12 +92,12 @@ a:hover {
 
     .header-title {
         position: absolute;
-        top: 10%;
-        left: 0;
-        right: 0;
+        inset: 0;
+        top: 50%;
         text-align: center;
-        font-size: 10rem;
+        font-size: 8rem;
         line-height: 1.3;
+        transform: translateY(-50%);
     }
 
     .datetime-info {
@@ -162,6 +128,33 @@ a:hover {
 // main.
 #main {
     background-color: $base-color;
+
+    .reserve-btn {
+        position: fixed;
+        top: 50%;
+        right: 0;
+        writing-mode: vertical-rl;
+        border-top: 3px solid $main-color;
+        border-left: 3px solid $main-color;
+        border-bottom: 3px solid $main-color;
+        border-radius: 4px 0 0 4px;
+        background-color: $white;
+        color: $main-color;
+        font-weight: bold;
+        transform: translateY(-50%);
+        padding: 16px 8px;
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url(../images/allow.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
 
     .remaining-days {
         background-color: $black;

@@ -25,51 +25,16 @@ a:hover {
   text-align: center;
 }
 
-.year {
-  font-size: 5rem;
-  letter-spacing: 0;
-  font-weight: bold;
-}
-
 .day {
   font-size: 4rem;
-  letter-spacing: 0;
+  letter-spacing: 1;
   font-weight: bold;
-}
-
-.time {
-  font-size: 4rem;
-  letter-spacing: 0;
-  font-weight: bold;
+  color: #f7b52c;
 }
 
 .section-title {
   font-size: 2.0rem;
   position: relative;
-}
-
-.section-title::before {
-  content: '';
-  width: 20px;
-  height: 30px;
-  position: absolute;
-  display: inline-block;
-  border-left: solid 1px #5767bf;
-  border-top: solid 1px #5767bf;
-  top: 0;
-  left: 0;
-}
-
-.section-title::after {
-  content: '';
-  width: 20px;
-  height: 30px;
-  position: absolute;
-  display: inline-block;
-  border-right: solid 1px #5767bf;
-  border-bottom: solid 1px #5767bf;
-  bottom: 0;
-  right: 0;
 }
 
 .section-title::first-letter {
@@ -123,12 +88,13 @@ a:hover {
 
 #header .header-title {
   position: absolute;
-  top: 10%;
-  left: 0;
-  right: 0;
+  inset: 0;
+  top: 50%;
   text-align: center;
-  font-size: 10rem;
+  font-size: 8rem;
   line-height: 1.3;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 #header .datetime-info {
@@ -157,6 +123,36 @@ a:hover {
 
 #main {
   background-color: #1f2f54;
+}
+
+#main .reserve-btn {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  border-top: 3px solid #f7b52c;
+  border-left: 3px solid #f7b52c;
+  border-bottom: 3px solid #f7b52c;
+  border-radius: 4px 0 0 4px;
+  background-color: #ffffff;
+  color: #f7b52c;
+  font-weight: bold;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 16px 8px;
+  cursor: pointer;
+}
+
+#main .reserve-btn::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/allow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #main .remaining-days {

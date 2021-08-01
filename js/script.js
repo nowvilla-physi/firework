@@ -27,3 +27,7 @@ class RemainingDays {
         return this.remainingDays;
     };
 }
+
+$('.reserve-btn').on('click', function () {
+    alert('予約ページは準備中です。(≧∀≦)')
+});
