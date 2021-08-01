@@ -2,7 +2,7 @@
 
 $base-color: #1f2f54;
 $main-color: #f7b52c;
-$accent-color: #ffffff;
+$accent-color: #0abab5;
 $white: #ffffff;
 $black: #26272c;
 $transparent-gray: #ccc4c4c4;
@@ -24,8 +24,13 @@ img {
     width: 100%;
 }
 
-a:hover {
-    text-decoration: underline;
+a {
+    transition: all 500ms ease;
+
+    &:hover {
+        color: $main-color;
+        text-decoration: underline;
+    }
 }
 
 .wrapper {
@@ -35,11 +40,17 @@ a:hover {
     text-align: center;
 }
 
+.date {
+    font-size: 4rem;
+    letter-spacing: 1.0;
+}
+
 .day {
     font-size: 4rem;
-    letter-spacing: 1;
     font-weight: bold;
-    color: $main-color;
+    background: -webkit-linear-gradient($main-color, $accent-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .section-title {
@@ -49,6 +60,20 @@ a:hover {
     &::first-letter {
         color: $main-color;
         font-size: 3.0rem;
+    }
+}
+
+@keyframes headerTitleGradation {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
     }
 }
 
@@ -98,19 +123,21 @@ a:hover {
         font-size: 8rem;
         line-height: 1.3;
         transform: translateY(-50%);
-    }
-
-    .datetime-info {
-        position: absolute;
-        top: 68%;
-        left: 0;
-        right: 0;
-        background-color: $transparent-gray;
-        font-size: 2.0rem;
-        font-weight: bold;
-        text-align: center;
-        margin: 0 auto;
-        width: 50%;
+        background: -webkit-linear-gradient(
+            60deg,
+            $main-color,
+            #ffdc00,
+            #ee7700,
+            #c2e5fa,
+            #51a5dd,
+            #261f87,
+            #008554,
+            $accent-color
+        );
+        background-size: 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: headerTitleGradation 10s infinite;
     }
 
     .building-image {
@@ -134,9 +161,9 @@ a:hover {
         top: 50%;
         right: 0;
         writing-mode: vertical-rl;
-        border-top: 3px solid $main-color;
-        border-left: 3px solid $main-color;
-        border-bottom: 3px solid $main-color;
+        border-top: 4px solid $main-color;
+        border-left: 4px solid $main-color;
+        border-bottom: 4px solid $main-color;
         border-radius: 4px 0 0 4px;
         background-color: $white;
         color: $main-color;
@@ -144,6 +171,8 @@ a:hover {
         transform: translateY(-50%);
         padding: 16px 8px;
         cursor: pointer;
+        white-space: nowrap;
+        transition: all 500ms ease;
 
         &::after {
             content: "";
@@ -156,13 +185,28 @@ a:hover {
         }
     }
 
-    .remaining-days {
+    .event-day-container {
         background-color: $black;
         text-align: center;
-        padding-bottom: 24px;
+        padding: 12px 0 24px;
+
+        .evnet-date {
+            font-size: 2.0rem;
+            line-height: 1.0;
+            background: -webkit-linear-gradient($main-color, $accent-color);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .evnet-time {
+            font-size: 2.0rem;
+            line-height: 1.0;
+            margin-top: 4px;
+        }
 
         .counter {
             font-size: 2.0rem;
+            line-height: 1.0;
             text-align: center;
         }
     }
@@ -171,4 +215,60 @@ a:hover {
 // about.
 #about {
     margin-top: 40px;
+
+    .about-container {
+
+        .about-contents {
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+
+            .about-img {
+                width: 60%;
+                object-fit: cover;
+            }
+
+            .about-description {
+                width: 40%;
+                padding: 16px 48px;
+            }
+
+            &:nth-child(even) {
+                .about-img {
+                    order: 2;
+                }
+
+                .about-description {
+                    order: 1;
+                }
+            }
+
+            .about-title {
+                font-size: 1.8rem;
+                position: relative;
+                padding: 2px 4px 12px;
+                background: $main-color;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -12px;
+                    left: -12px;
+                    width: 100%;
+                    height: 100%;
+                    border: 4px solid $white;
+                }
+            }
+
+            .about-detail {
+                margin-top: 24px;
+                font-size: 1.2rem;
+
+                span {
+                    font-size: 1.5rem;
+                    color: $main-color;
+                }
+            }
+        }
+    }
 }
