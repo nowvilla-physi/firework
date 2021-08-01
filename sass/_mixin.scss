@@ -1,1 +1,14 @@
 @charset "utf-8";
+
+$imgPath: '../images/';
+
+@mixin insertBuildingImg($imgFileName) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url($imgPath + $imgFileName);
+    background-repeat: repeat-x;
+    background-position: center;
+    height: 150px;
+    width: 100vw;
+}
