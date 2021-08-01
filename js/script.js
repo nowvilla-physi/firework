@@ -18,9 +18,15 @@ class RemainingDays {
     remainingDays = null;
 
     calcRemainingDays(now) {
-        this.remainingDays = Math.floor(
+        const remainingDays = Math.floor(
             (this.eventDate.getTime() - now.getTime()) / (24 * 60 * 60 * 1000) + 1
         );
+
+        if (remainingDays < 0) {
+            this.remainingDays = 0;
+        } else {
+            this.remainingDays = remainingDays;
+        }
     };
 
     getRemainingDays() {
