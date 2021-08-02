@@ -1,6 +1,8 @@
 const Y_AXIS = 1;
 const X_AXIS = 2;
+const MAIN_COLOR = '#f7b52c';
 let canvas;
+let startButton;
 let fireworks = [];
 let star = [];
 
@@ -19,10 +21,25 @@ function setup() {
         document.documentElement.clientHeight
     );
     canvas.position(0, 0);
-    canvas.style("z-index", "-1");
+    canvas.style('z-index', '10');
     colorMode(RGB);
     frameRate(60);
     this.preStar();
+
+    startButton = createButton('星駆花火大会のWebサイトへ');
+    startButton.position(
+        width / 2 - startButton.width / 2,
+        height / 2 - startButton.height / 2
+    )
+    startButton.style('z-index', '20');
+    startButton.style('color', MAIN_COLOR);
+    startButton.style('text-decoration', 'underline');
+    startButton.style('letter-spacing', '3px');
+    startButton.mousePressed(toTopPage)
+}
+
+function toTopPage() {
+    window.location.href = 'https://zenn.dev/web_tips'
 }
 
 function draw() {
