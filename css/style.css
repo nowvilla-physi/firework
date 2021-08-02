@@ -332,6 +332,45 @@ a:hover {
   border: solid 1px #f7b52c;
 }
 
+#detail {
+  margin-top: 40px;
+  padding-bottom: 16px;
+}
+
+#detail .detail-container {
+  margin-top: 24px;
+  display: -ms-grid;
+  display: grid;
+  gap: 0px;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+#detail .detail-container .detail-item {
+  position: relative;
+  background-color: #26272c;
+  border-radius: 10%;
+  padding-top: 16px;
+  height: 108px;
+  width: 216px;
+}
+
+#detail .detail-container .detail-item .detail-item-img {
+  height: 24px;
+  width: 24px;
+}
+
+#detail .detail-container .detail-item .detail-item-title {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -70%);
+          transform: translate(-50%, -70%);
+  white-space: nowrap;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
 #footer {
   position: relative;
   color: #1f2f54;

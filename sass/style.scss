@@ -321,6 +321,43 @@ a {
     }
 }
 
+// detail.
+#detail {
+    margin-top: 40px;
+    padding-bottom: 16px;
+
+    .detail-container {
+        margin-top: 24px;
+        display: grid;
+        gap: 0px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+        .detail-item {
+            position: relative;
+            background-color: $black;
+            border-radius: 10%;
+            padding-top: 16px;
+            height: 108px;
+            width: 216px;
+
+            .detail-item-img {
+                height: 24px;
+                width: 24px;
+            }
+
+            .detail-item-title {
+                position: absolute;
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%, -70%);
+                white-space: nowrap;
+                font-size: 1.25rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
 // footer.
 #footer {
     position: relative;
