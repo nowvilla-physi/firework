@@ -35,5 +35,5 @@ class RemainingDays {
 }
 
 $('.reserve-btn').on('click', function () {
-    alert('予約ページは準備中です。(≧∀≦)')
+    window.location.href = '../reserve.html';
 });
