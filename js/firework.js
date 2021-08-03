@@ -39,7 +39,7 @@ function setup() {
 }
 
 function toTopPage() {
-    window.location.href = 'https://zenn.dev/web_tips'
+    window.location.href = '../home.html'
 }
 
 function draw() {
