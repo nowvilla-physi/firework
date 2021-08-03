@@ -46,37 +46,6 @@
   width: auto;
 }
 
-#header #nav {
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#header #nav .header-logo {
-  padding-right: 24px;
-}
-
-#header #nav .header-logo img {
-  height: 64px;
-  width: 64px;
-}
-
-#header #nav .header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#header #nav .header-nav .header-nav-item {
-  padding-right: 24px;
-}
-
 #header .header-title {
   position: absolute;
   inset: 0;

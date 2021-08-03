@@ -45,6 +45,36 @@ a {
     }
 }
 
+// header.
+#header {
+    position: relative;
+
+    #nav {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        display: flex;
+
+        .header-logo {
+            padding-right: 24px;
+
+            img {
+                height: 64px;
+                width: 64px;
+            }
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+
+            .header-nav-item {
+                padding-right: 24px;
+            }
+        }
+    }
+}
+
 // footer.
 #footer {
     position: relative;
