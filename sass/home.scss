@@ -1,13 +1,7 @@
 @charset "utf-8";
 @import "_breakpoints.scss";
+@import "_colors.scss";
 @import "_mixin.scss";
-
-$base-color: #1f2f54;
-$main-color: #f7b52c;
-$accent-color: #0abab5;
-$white: #ffffff;
-$black: #26272c;
-$transparent-gray: #ccc4c4c4;
 
 // common.
 html {
@@ -335,10 +329,11 @@ a {
         .detail-item {
             position: relative;
             background-color: $black;
-            border-radius: 10%;
+            border-radius: 4px;
             padding-top: 16px;
             height: 108px;
             width: 216px;
+            transition: all 300ms;
 
             .detail-item-img {
                 height: 24px;
@@ -353,6 +348,10 @@ a {
                 white-space: nowrap;
                 font-size: 1.25rem;
                 font-weight: bold;
+            }
+
+            &:hover {
+                transform: scale(1.05);
             }
         }
     }
