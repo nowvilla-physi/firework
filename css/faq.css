@@ -1,0 +1,161 @@
+#header {
+  position: relative;
+}
+
+#header .main-visual {
+  background-image: url(../images/index-firework.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+}
+
+#header #nav {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header #nav .header-logo {
+  padding-right: 24px;
+}
+
+#header #nav .header-logo img {
+  height: 64px;
+  width: 64px;
+}
+
+#header #nav .header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header #nav .header-nav .header-nav-item {
+  padding-right: 24px;
+}
+
+#header .header-title {
+  position: absolute;
+  inset: 0;
+  top: 50%;
+  text-align: center;
+  font-size: 8rem;
+  line-height: 1.3;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: -webkit-linear-gradient(60deg, #f7b52c, #ffdc00, #ee7700, #c2e5fa, #51a5dd, #261f87, #008554, #0abab5);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: headerTitleGradation 10s infinite;
+          animation: headerTitleGradation 10s infinite;
+}
+
+#header .building-image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url("../images/building-black.svg");
+  background-repeat: repeat-x;
+  background-position: center;
+  height: 150px;
+  width: 100vw;
+}
+
+#main {
+  background-color: #1f2f54;
+  padding-bottom: 32px;
+}
+
+#main .reserve-btn {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  border-top: 4px solid #f7b52c;
+  border-left: 4px solid #f7b52c;
+  border-bottom: 4px solid #f7b52c;
+  border-radius: 4px 0 0 4px;
+  background-color: #ffffff;
+  color: #f7b52c;
+  font-weight: bold;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 16px 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+#main .reserve-btn::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/allow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#main .event-day-container {
+  background-color: #26272c;
+  text-align: center;
+  padding: 12px 0 24px;
+}
+
+#main .event-day-container .counter {
+  font-size: 2.0rem;
+  line-height: 1.0;
+  text-align: center;
+}
+
+#main .event-day-container .evnet-date, #main .event-day-container .evnet-time {
+  font-size: 2.0rem;
+  line-height: 1.0;
+  margin-top: 8px;
+}
+
+#footer {
+  position: relative;
+  color: #1f2f54;
+  padding: 24px 0 160px;
+}
+
+#footer .footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#footer .footer-wrapper .footer-img {
+  background-image: url(../images/logo-red.svg);
+  background-repeat: repeat;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+}
+
+#footer .building-image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url("../images/building-yellow.svg");
+  background-repeat: repeat-x;
+  background-position: center;
+  height: 150px;
+  width: 100vw;
+}
+/*# sourceMappingURL=faq.css.map */
