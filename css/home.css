@@ -9,27 +9,6 @@
   color: #f7b52c;
 }
 
-.section-title {
-  font-size: 2.0rem;
-  position: relative;
-}
-
-.section-title::first-letter {
-  color: #f7b52c;
-  font-size: 3.0rem;
-}
-
-.building-image {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-image: url(../images/tmp.svg);
-  background-repeat: repeat-x;
-  background-position: center;
-  height: 150px;
-  width: 100vw;
-}
-
 @-webkit-keyframes headerTitleGradation {
   0% {
     background-position: 0% 50%;

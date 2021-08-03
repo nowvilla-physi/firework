@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import "_colors.scss";
+@import "_mixin.scss";
 
 // common.
 html {
@@ -32,6 +33,16 @@ a {
     padding: 0 4%;
     margin: 0 auto;
     text-align: center;
+}
+
+.section-title {
+    font-size: 2.0rem;
+    position: relative;
+
+    &::first-letter {
+        color: $main-color;
+        font-size: 3.0rem;
+    }
 }
 
 // footer.
