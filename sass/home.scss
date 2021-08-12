@@ -244,9 +244,8 @@
 
     .detail-container {
         margin-top: 24px;
-        display: grid;
-        gap: 0px;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        display: flex;
+        justify-content: space-between;
 
         .detail-item {
             position: relative;

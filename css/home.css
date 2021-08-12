@@ -254,11 +254,12 @@
 
 #detail .detail-container {
   margin-top: 24px;
-  display: -ms-grid;
-  display: grid;
-  gap: 0px;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #detail .detail-container .detail-item {
