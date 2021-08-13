@@ -1,6 +1,7 @@
 #header {
-  height: 80px;
+  height: 112px;
   background-color: #1f2f54;
+  border-bottom: 1px solid #ffffff;
 }
 
 #main {
