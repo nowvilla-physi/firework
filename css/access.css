@@ -54,8 +54,21 @@
   text-align: left;
 }
 
-#access .access-container:not(:first-child) {
-  margin-top: 32px;
+#access .access-container .access-note {
+  background-color: #f7b52c;
+  padding: 1% 2%;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+#access .access-container .access-note p {
+  text-decoration: underline;
+}
+
+#access .access-container .access-note span {
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 #access .access-container .aceess-title {

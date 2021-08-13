@@ -42,9 +42,21 @@
     .access-container {
         text-align: left;
 
+        .access-note{
+            background-color: $main-color;
+            padding: 1% 2%;
+            margin-bottom: 16px;
+            font-size: 1.1rem;
 
-        &:not(:first-child) {
-            margin-top: 32px;
+            p {
+                text-decoration: underline;
+            }
+
+            span {
+                color: red;
+                font-weight: bold;
+                text-decoration: none;
+            }
         }
 
         .aceess-title {
