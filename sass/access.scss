@@ -13,75 +13,10 @@
 #main {
     background-color: $base-color;
     padding-bottom: 32px;
-
-    .reserve-btn {
-        position: fixed;
-        top: 50%;
-        right: 0;
-        writing-mode: vertical-rl;
-        border-top: 4px solid $main-color;
-        border-left: 4px solid $main-color;
-        border-bottom: 4px solid $main-color;
-        border-radius: 4px 0 0 4px;
-        background-color: $white;
-        color: $main-color;
-        font-weight: bold;
-        transform: translateY(-50%);
-        padding: 16px 8px;
-        cursor: pointer;
-        white-space: nowrap;
-        transition: all 500ms ease;
-
-        &::after {
-            content: "";
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            background-image: url(../images/allow.svg);
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
-    }
-
-    .event-day-container {
-        background-color: $black;
-        text-align: center;
-        padding: 12px 0 24px;
-
-        .counter {
-            font-size: 2.0rem;
-            line-height: 1.0;
-            text-align: center;
-        }
-
-        .evnet-date, .evnet-time {
-            font-size: 2.0rem;
-            line-height: 1.0;
-            margin-top: 8px;
-        }
-    }
 }
 
-// footer.
-#footer {
-    position: relative;
-    color: $base-color;
-    padding: 24px 0 160px;
+// access.
+#access {
+    padding: 24px 0px;
 
-    .footer-wrapper {
-        display: flex;
-        justify-content: space-around;
-
-        .footer-img {
-            background-image: url(../images/logo-red.svg);
-            background-repeat: repeat;
-            background-size: cover;
-            height: 40px;
-            width: 40px;
-        }
-    }
-
-    .building-image {
-        @include insertBuildingImg('building-yellow.svg');
-    }
 }
