@@ -11,4 +11,118 @@
 #access {
   padding: 24px 0px;
 }
+
+#access #ferry-tab {
+  position: relative;
+  padding-left: 64px;
+  padding-right: 16px;
+}
+
+#access #ferry-tab::before {
+  content: '';
+  left: 12px;
+  top: 50%;
+  position: absolute;
+  display: inline-block;
+  background: url("../images/ferry.svg") no-repeat;
+  height: 40px;
+  width: 40px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#access #passenger-ship-tab {
+  position: relative;
+  padding-left: 64px;
+  padding-right: 16px;
+}
+
+#access #passenger-ship-tab::before {
+  content: '';
+  left: 12px;
+  top: 50%;
+  position: absolute;
+  display: inline-block;
+  background: url("../images/passenger_ship.svg") no-repeat;
+  height: 40px;
+  width: 40px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#access .access-container {
+  text-align: left;
+}
+
+#access .access-container:not(:first-child) {
+  margin-top: 32px;
+}
+
+#access .access-container .aceess-title {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 16px;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #f7b52c;
+}
+
+#access .access-container .car::before {
+  content: '';
+  left: 0;
+  top: 50%;
+  position: absolute;
+  display: inline-block;
+  background: url("../images/car.svg") no-repeat;
+  height: 32px;
+  width: 32px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#access .access-container .train::before {
+  content: '';
+  left: 0;
+  top: 50%;
+  position: absolute;
+  display: inline-block;
+  background: url("../images/train.svg") no-repeat;
+  height: 32px;
+  width: 32px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#access .access-container .bus::before {
+  content: '';
+  left: 0;
+  top: 50%;
+  position: absolute;
+  display: inline-block;
+  background: url("../images/bus.svg") no-repeat;
+  height: 32px;
+  width: 32px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#access .access-container .method {
+  margin: 8px 2% 0;
+}
+
+#access .access-container .method .detail {
+  margin-bottom: 16px;
+}
+
+#access .access-container .method .detail .detail-title {
+  font-size: 1.2rem;
+}
+
+#access .access-container .map {
+  margin-bottom: 16px;
+}
+
+#access .access-container .map iframe {
+  padding: 0 2%;
+  width: 100%;
+}
 /*# sourceMappingURL=access.css.map */

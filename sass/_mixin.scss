@@ -12,3 +12,27 @@ $imgPath: '../images/';
     height: 150px;
     width: 100vw;
 }
+
+@mixin insertAccessIconForTab($imgFileName) {
+    content: '';
+    left: 12px;
+    top: 50%;
+    position: absolute;
+    display: inline-block;
+    background: url($imgPath + $imgFileName) no-repeat;
+    height: 40px;
+    width: 40px;
+    transform: translateY(-50%);
+}
+
+@mixin insertAccessIconForTitle($imgFileName) {
+    content: '';
+    left: 0;
+    top: 50%;
+    position: absolute;
+    display: inline-block;
+    background: url($imgPath + $imgFileName) no-repeat;
+    height: 32px;
+    width: 32px;
+    transform: translateY(-50%);
+}

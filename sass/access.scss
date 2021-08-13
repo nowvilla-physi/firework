@@ -19,4 +19,79 @@
 #access {
     padding: 24px 0px;
 
+    #ferry-tab {
+        position: relative;
+        padding-left: 64px;
+        padding-right: 16px;
+
+        &::before {
+            @include insertAccessIconForTab("ferry.svg");
+        }
+    }
+
+    #passenger-ship-tab {
+        position: relative;
+        padding-left: 64px;
+        padding-right: 16px;
+
+        &::before {
+            @include insertAccessIconForTab("passenger_ship.svg");
+        }
+    }
+
+    .access-container {
+        text-align: left;
+
+
+        &:not(:first-child) {
+            margin-top: 32px;
+        }
+
+        .aceess-title {
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 16px;
+            font-size: 1.4rem;
+            border-bottom: 2px solid $main-color;
+        }
+
+        .car {
+            &::before {
+                @include insertAccessIconForTitle("car.svg");
+            }
+        }
+
+        .train {
+            &::before {
+                @include insertAccessIconForTitle("train.svg");
+            }
+        }
+
+        .bus {
+            &::before {
+                @include insertAccessIconForTitle("bus.svg");
+            }
+        }
+
+        .method {
+            margin: 8px 2% 0;
+
+            .detail {
+                margin-bottom: 16px;
+
+                .detail-title {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .map {
+            margin-bottom: 16px;
+
+            iframe {
+                padding: 0 2%;
+                width: 100%;
+            }
+        }
+    }
 }
