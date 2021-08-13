@@ -8,87 +8,48 @@
   padding-bottom: 32px;
 }
 
-#main .reserve-btn {
-  position: fixed;
-  top: 50%;
-  right: 0;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  border-top: 4px solid #f7b52c;
-  border-left: 4px solid #f7b52c;
-  border-bottom: 4px solid #f7b52c;
-  border-radius: 4px 0 0 4px;
-  background-color: #ffffff;
-  color: #f7b52c;
-  font-weight: bold;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  padding: 16px 8px;
-  cursor: pointer;
-  white-space: nowrap;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
+#program {
+  padding-top: 24px;
 }
 
-#main .reserve-btn::after {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url(../images/allow.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+#program .program-container {
+  margin: 16px 0;
+  text-align: left;
 }
 
-#main .event-day-container {
-  background-color: #26272c;
-  text-align: center;
-  padding: 12px 0 24px;
+#program .program-container .program-contents .program-description {
+  margin-bottom: 40px;
 }
 
-#main .event-day-container .counter {
-  font-size: 2.0rem;
-  line-height: 1.0;
-  text-align: center;
-}
-
-#main .event-day-container .evnet-date, #main .event-day-container .evnet-time {
-  font-size: 2.0rem;
-  line-height: 1.0;
-  margin-top: 8px;
-}
-
-#footer {
+#program .program-container .program-contents .program-description .program-title {
+  color: #26272c;
+  font-size: 1.5rem;
   position: relative;
-  color: #1f2f54;
-  padding: 24px 0 160px;
+  padding: 2px 4px 12px 128px;
+  background: #f7b52c;
 }
 
-#footer .footer-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-#footer .footer-wrapper .footer-img {
-  background-image: url(../images/logo-red.svg);
-  background-repeat: repeat;
-  background-size: cover;
-  height: 40px;
-  width: 40px;
-}
-
-#footer .building-image {
+#program .program-container .program-contents .program-description .program-title::before {
+  content: '';
   position: absolute;
-  left: 0;
-  bottom: 0;
-  background-image: url("../images/building-yellow.svg");
-  background-repeat: repeat-x;
-  background-position: center;
-  height: 150px;
-  width: 100vw;
+  top: -12px;
+  left: -12px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #ffffff;
+}
+
+#program .program-container .program-contents .program-description .program-title .start-time {
+  position: absolute;
+  top: 2px;
+  left: 16px;
+}
+
+#program .program-container .program-contents .program-description .program-detail {
+  padding: 8px;
+}
+
+#program .program-container .program-contents .program-description .program-detail .song {
+  margin-top: 16px;
 }
 /*# sourceMappingURL=program.css.map */
