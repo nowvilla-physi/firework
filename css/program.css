@@ -14,19 +14,24 @@
 }
 
 #program .program-container {
-  margin: 16px 0;
+  margin: 40px 0;
   text-align: left;
 }
 
+#program .program-container .program-contents {
+  background-color: #ffffff;
+}
+
 #program .program-container .program-contents .program-description {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 #program .program-container .program-contents .program-description .program-title {
+  text-align: center;
   color: #26272c;
   font-size: 1.5rem;
   position: relative;
-  padding: 2px 4px 12px 128px;
+  padding: 2px 0 12px;
   background: #f7b52c;
 }
 
@@ -41,16 +46,29 @@
 }
 
 #program .program-container .program-contents .program-description .program-title .start-time {
+  font-size: 0.8rem;
   position: absolute;
-  top: 2px;
-  left: 16px;
+  top: 6px;
+  left: 24px;
+  background-color: #c1473a;
+  color: #ffffff;
+  padding: 3px 8px;
+  height: 28px;
+  width: 72px;
+  border-radius: 4px;
 }
 
 #program .program-container .program-contents .program-description .program-detail {
-  padding: 8px;
+  color: #26272c;
+  padding: 16px;
 }
 
 #program .program-container .program-contents .program-description .program-detail .song {
   margin-top: 16px;
+}
+
+#program .program-container .program-contents .program-description .program-detail .trader {
+  font-size: 0.8rem;
+  color: #a9a9a9;
 }
 /*# sourceMappingURL=program.css.map */

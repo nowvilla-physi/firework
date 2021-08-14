@@ -20,20 +20,21 @@
     padding-top: 24px;
 
     .program-container {
-        margin: 16px 0;
+        margin: 40px 0;
         text-align: left;
 
         .program-contents {
+            background-color: $white;
 
             .program-description {
-                margin-bottom: 40px;
-
+                margin-bottom: 48px;
 
                 .program-title {
+                    text-align: center;
                     color: $black;
                     font-size: 1.5rem;
                     position: relative;
-                    padding: 2px 4px 12px 128px;
+                    padding: 2px 0 12px;
                     background: $main-color;
 
                     &::before {
@@ -47,17 +48,30 @@
                     }
 
                     .start-time {
+                        font-size: 0.8rem;
                         position: absolute;
-                        top: 2px;
-                        left: 16px;
+                        top: 6px;
+                        left: 24px;
+                        background-color: $red;
+                        color: $white;
+                        padding: 3px 8px;
+                        height: 28px;
+                        width: 72px;
+                        border-radius: 4px;
                     }
                 }
 
                 .program-detail {
-                    padding: 8px;
+                    color: $black;
+                    padding: 16px;
 
                     .song {
                         margin-top: 16px;
+                    }
+
+                    .trader {
+                        font-size: 0.8rem;
+                        color: $dark-gray;
                     }
                 }
             }
