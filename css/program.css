@@ -13,12 +13,6 @@
   padding-top: 24px;
 }
 
-@media screen and (max-width: 400px) {
-  #program {
-    color: yellow;
-  }
-}
-
 #program .program-container {
   margin: 40px 0;
   text-align: left;
@@ -35,10 +29,15 @@
 #program .program-container .program-contents .program-description .program-title {
   text-align: center;
   color: #26272c;
-  font-size: 1.5rem;
   position: relative;
   padding: 2px 0 12px;
   background: #f7b52c;
+}
+
+@media screen and (max-width: 400px) {
+  #program .program-container .program-contents .program-description .program-title {
+    font-size: 1.2rem;
+  }
 }
 
 #program .program-container .program-contents .program-description .program-title::before {
@@ -51,17 +50,74 @@
   border: 3px solid #ffffff;
 }
 
+#program .program-container .program-contents .program-description .program-title .title-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#program .program-container .program-contents .program-description .program-title .title-items .main {
+  font-size: 1.5rem;
+  padding-right: 8px;
+}
+
+@media screen and (max-width: 400px) {
+  #program .program-container .program-contents .program-description .program-title .title-items .main {
+    font-size: 1.3rem;
+    padding-right: 0;
+  }
+}
+
+#program .program-container .program-contents .program-description .program-title .title-items .sub {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  #program .program-container .program-contents .program-description .program-title .title-items .sub {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #program .program-container .program-contents .program-description .program-title .title-items .sub {
+    font-size: 1.0rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #program .program-container .program-contents .program-description .program-title .title-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #program .program-container .program-contents .program-description .program-title .start-time {
   font-size: 0.8rem;
   position: absolute;
   top: 6px;
-  left: 24px;
+  left: 12px;
   background-color: #c1473a;
   color: #ffffff;
   padding: 3px 8px;
   height: 28px;
   width: 72px;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 400px) {
+  #program .program-container .program-contents .program-description .program-title .start-time {
+    font-size: 0.7rem;
+    top: 8px;
+    left: 8px;
+    padding: 0;
+    height: 20px;
+    width: 64px;
+  }
 }
 
 #program .program-container .program-contents .program-description .program-detail {

@@ -19,10 +19,6 @@
 #program {
     padding-top: 24px;
 
-    @include mq(sm) {
-        color: yellow;
-    }
-
     .program-container {
         margin: 40px 0;
         text-align: left;
@@ -36,10 +32,13 @@
                 .program-title {
                     text-align: center;
                     color: $black;
-                    font-size: 1.5rem;
                     position: relative;
                     padding: 2px 0 12px;
                     background: $main-color;
+
+                    @include mq(sm) {
+                        font-size: 1.2rem;
+                    }
 
                     &::before {
                         content: '';
@@ -51,17 +50,57 @@
                         border: 3px solid $white;
                     }
 
+                    .title-items {
+                        display: flex;
+                        justify-content: center;
+
+                        .main {
+                            font-size: 1.5rem;
+                            padding-right: 8px;
+
+                            @include mq(sm) {
+                                font-size: 1.3rem;
+                                padding-right: 0;
+                            }
+                        }
+
+                        .sub {
+                            font-size: 1.5rem;
+
+                            @include mq(md) {
+                                font-size: 1.3rem;
+                            }
+
+                            @include mq(sm) {
+                                font-size: 1.0rem;
+                            }
+                        }
+
+                        @include mq(md) {
+                            flex-direction: column;
+                        }
+                    }
+
                     .start-time {
                         font-size: 0.8rem;
                         position: absolute;
                         top: 6px;
-                        left: 24px;
+                        left: 12px;
                         background-color: $red;
                         color: $white;
                         padding: 3px 8px;
                         height: 28px;
                         width: 72px;
                         border-radius: 4px;
+
+                        @include mq(sm) {
+                            font-size: 0.7rem;
+                            top: 8px;
+                            left: 8px;
+                            padding: 0;
+                            height: 20px;
+                            width: 64px;
+                        }
                     }
                 }
 
