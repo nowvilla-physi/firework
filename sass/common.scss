@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "_breakpoints.scss";
 @import "_colors.scss";
 @import "_mixin.scss";
 
@@ -68,8 +69,101 @@ a {
             display: flex;
             align-items: center;
 
+            @include mq(md) {
+                display: none;
+            }
+
             .header-nav-item {
                 padding-right: 24px;
+            }
+        }
+    }
+
+    .hamburger-menu {
+        display: none;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        margin-top: 45px;
+        margin-left: 88%;
+
+        @include mq(md) {
+            display: inline-block;
+        }
+
+        span {
+            display: inline-block;
+            position: absolute;
+            background-color: $white;
+            width: 100%;
+            height: 2px;
+            border-radius: 2px;
+            transition: all 500ms;
+
+            &:nth-of-type(1) {
+                top: 0;
+            }
+
+            &:nth-of-type(2) {
+                top: 50%;
+            }
+
+            &:nth-of-type(3) {
+                top: 100%;
+            }
+        }
+    }
+
+    #mask {
+        display: none;
+    }
+
+    &.open {
+        .hamburger-menu {
+
+            span {
+                z-index: 30;
+                background-color: #fff;
+            }
+
+            span:nth-of-type(1) {
+                transform: translateY(10px) rotate(315deg);
+            }
+
+            span:nth-of-type(2) {
+                opacity: 0;
+            }
+
+            span:nth-of-type(3) {
+                transform: translateY(-10px) rotate(405deg);
+            }
+        }
+
+        #mask {
+            display: block;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $black;
+            opacity: .9;
+            z-index: 20;
+            cursor: pointer;
+
+            .global-nav {
+                margin-top: 50px;
+
+                .nav-list {
+                    color: $white;
+
+                    li {
+                        font-size: 1.5rem;
+                        padding: 10px 60px;
+                    }
+                }
             }
         }
     }
@@ -84,6 +178,7 @@ a {
     .footer-wrapper {
         display: flex;
         justify-content: space-around;
+        text-align: center;
 
         .footer-img {
             background-image: url(../images/logo-red.svg);
@@ -91,6 +186,10 @@ a {
             background-size: cover;
             height: 40px;
             width: 40px;
+
+            @include mq(sm) {
+                display: none;
+            }
         }
     }
 

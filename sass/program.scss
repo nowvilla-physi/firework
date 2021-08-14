@@ -19,6 +19,10 @@
 #program {
     padding-top: 24px;
 
+    @include mq(sm) {
+        color: yellow;
+    }
+
     .program-container {
         margin: 40px 0;
         text-align: left;

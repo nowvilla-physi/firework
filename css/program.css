@@ -13,6 +13,12 @@
   padding-top: 24px;
 }
 
+@media screen and (max-width: 400px) {
+  #program {
+    color: yellow;
+  }
+}
+
 #program .program-container {
   margin: 40px 0;
   text-align: left;

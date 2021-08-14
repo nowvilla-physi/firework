@@ -36,3 +36,9 @@ $imgPath: '../images/';
     width: 32px;
     transform: translateY(-50%);
 }
+
+@mixin mq($breakpoint) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
