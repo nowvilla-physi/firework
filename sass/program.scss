@@ -108,6 +108,14 @@
                     color: $black;
                     padding: 16px;
 
+                    @include mq(md) {
+                        font-size: 0.9rem;
+                    }
+
+                    @include mq(sm) {
+                        font-size: 0.8rem;
+                    }
+
                     .song {
                         margin-top: 16px;
                     }
@@ -115,6 +123,14 @@
                     .trader {
                         font-size: 0.8rem;
                         color: $dark-gray;
+
+                        @include mq(md) {
+                            font-size: 0.7rem;
+                        }
+
+                        @include mq(sm) {
+                            font-size: 0.6rem;
+                        }
                     }
                 }
             }

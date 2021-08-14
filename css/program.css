@@ -125,6 +125,18 @@
   padding: 16px;
 }
 
+@media screen and (max-width: 768px) {
+  #program .program-container .program-contents .program-description .program-detail {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #program .program-container .program-contents .program-description .program-detail {
+    font-size: 0.8rem;
+  }
+}
+
 #program .program-container .program-contents .program-description .program-detail .song {
   margin-top: 16px;
 }
@@ -132,5 +144,17 @@
 #program .program-container .program-contents .program-description .program-detail .trader {
   font-size: 0.8rem;
   color: #a9a9a9;
+}
+
+@media screen and (max-width: 768px) {
+  #program .program-container .program-contents .program-description .program-detail .trader {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #program .program-container .program-contents .program-description .program-detail .trader {
+    font-size: 0.6rem;
+  }
 }
 /*# sourceMappingURL=program.css.map */
