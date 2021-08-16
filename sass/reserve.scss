@@ -18,11 +18,11 @@
 
 // reserve.
 #reserve {
-    padding: 24px 0px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     .reserve-msg {
         margin-top: 16px;
-        font-size: 1.05rem;
         text-align: left;
     }
 
@@ -34,20 +34,41 @@
             flex-wrap: wrap;
             width: 100%;
 
+            @include mq(sm) {
+                flex-direction: column;
+            }
+
             dt {
                 background-color: $dark-gray;
                 width: 40%;
-                font-size: 1.2rem;
                 padding: 3% 4%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+
+                @include mq(md) {
+                    font-size: 0.9rem;
+                    width: 100%;
+                    padding: 2% 4%;
+                }
+
+                @include mq(sm) {
+                    font-size: 0.8rem;
+                }
 
                 .required {
                     font-size: 1.0rem;
                     padding: 2px 4px;
                     background-color: $red;
                     border-radius: 4px;
+
+                    @include mq(md) {
+                        font-size: 0.8rem;
+                    }
+
+                    @include mq(sm) {
+                        font-size: 0.7rem;
+                    }
                 }
             }
 
@@ -55,8 +76,17 @@
                 width: 60%;
                 background-color: $light-gray;
                 color: $black;
-                font-size: 1.2rem;
                 padding: 3% 4%;
+
+                @include mq(md) {
+                    font-size: 0.9rem;
+                    width: 100%;
+                    padding: 4%;
+                }
+
+                @include mq(sm) {
+                    font-size: 0.8rem;
+                }
 
                 input[type="text"], input[type="mail"] {
                     text-align: left;
@@ -84,6 +114,16 @@
             margin-top: 32px;
             font-size: 1.5rem;
             transition: all 500ms ease;
+
+            @include mq(md) {
+                font-size: 1.2rem;
+                padding: 8px 160px;
+            }
+
+            @include mq(sm) {
+                font-size: 1.0rem;
+                padding: 8px 120px;
+            }
 
             &:hover {
                 background-color: $white;

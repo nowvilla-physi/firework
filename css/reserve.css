@@ -10,12 +10,12 @@
 }
 
 #reserve {
-  padding: 24px 0px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 #reserve .reserve-msg {
   margin-top: 16px;
-  font-size: 1.05rem;
   text-align: left;
 }
 
@@ -32,10 +32,18 @@
   width: 100%;
 }
 
+@media screen and (max-width: 414px) {
+  #reserve .form-group dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #reserve .form-group dl dt {
   background-color: #a9a9a9;
   width: 40%;
-  font-size: 1.2rem;
   padding: 3% 4%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,6 +56,20 @@
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  #reserve .form-group dl dt {
+    font-size: 0.9rem;
+    width: 100%;
+    padding: 2% 4%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #reserve .form-group dl dt {
+    font-size: 0.8rem;
+  }
+}
+
 #reserve .form-group dl dt .required {
   font-size: 1.0rem;
   padding: 2px 4px;
@@ -55,12 +77,37 @@
   border-radius: 4px;
 }
 
+@media screen and (max-width: 768px) {
+  #reserve .form-group dl dt .required {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #reserve .form-group dl dt .required {
+    font-size: 0.7rem;
+  }
+}
+
 #reserve .form-group dl dd {
   width: 60%;
   background-color: #dedede;
   color: #26272c;
-  font-size: 1.2rem;
   padding: 3% 4%;
+}
+
+@media screen and (max-width: 768px) {
+  #reserve .form-group dl dd {
+    font-size: 0.9rem;
+    width: 100%;
+    padding: 4%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #reserve .form-group dl dd {
+    font-size: 0.8rem;
+  }
 }
 
 #reserve .form-group dl dd input[type="text"], #reserve .form-group dl dd input[type="mail"] {
@@ -88,6 +135,20 @@
   font-size: 1.5rem;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+}
+
+@media screen and (max-width: 768px) {
+  #reserve .form-group input[type="submit"] {
+    font-size: 1.2rem;
+    padding: 8px 160px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #reserve .form-group input[type="submit"] {
+    font-size: 1.0rem;
+    padding: 8px 120px;
+  }
 }
 
 #reserve .form-group input[type="submit"]:hover {

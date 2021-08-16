@@ -36,9 +36,33 @@ a:hover {
   position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+
 .section-title::first-letter {
   color: #f7b52c;
   font-size: 3.0rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section-title::first-letter {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-title::first-letter {
+    font-size: 2.6rem;
+  }
 }
 
 #header {
