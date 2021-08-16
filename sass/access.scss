@@ -18,7 +18,8 @@
 
 // access.
 #access {
-    padding: 24px 0px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     #ferry-tab {
         position: relative;
@@ -49,6 +50,10 @@
             margin-bottom: 16px;
             font-size: 1.1rem;
 
+            @include mq(md) {
+                padding: 2% 4%;
+            }
+
             p {
                 text-decoration: underline;
             }
@@ -57,6 +62,35 @@
                 color: red;
                 font-weight: bold;
                 text-decoration: none;
+
+                @include mq(sm) {
+                    display: block;
+                    margin-top: 16px;
+                }
+            }
+
+            dl {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+
+                @include mq(sm) {
+                    flex-direction: column;
+                }
+
+                dt {
+                    font-weight: normal;
+                    width: auto;
+
+                    @include mq(sm) {
+                        margin-top: 16px;
+                    }
+                }
+
+                dd {
+                    margin-left: 16px;
+                    width: auto;
+                }
             }
         }
 
@@ -94,6 +128,15 @@
 
                 .detail-title {
                     font-size: 1.2rem;
+                }
+
+                p {
+                    &:not(:first-of-type) {
+                        @include mq(sm) {
+
+                            margin-top: 16px;
+                        }
+                    }
                 }
             }
         }

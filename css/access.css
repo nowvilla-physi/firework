@@ -10,7 +10,8 @@
 }
 
 #access {
-  padding: 24px 0px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 #access #ferry-tab {
@@ -62,6 +63,12 @@
   font-size: 1.1rem;
 }
 
+@media screen and (max-width: 768px) {
+  #access .access-container .access-note {
+    padding: 2% 4%;
+  }
+}
+
 #access .access-container .access-note p {
   text-decoration: underline;
 }
@@ -70,6 +77,47 @@
   color: red;
   font-weight: bold;
   text-decoration: none;
+}
+
+@media screen and (max-width: 414px) {
+  #access .access-container .access-note span {
+    display: block;
+    margin-top: 16px;
+  }
+}
+
+#access .access-container .access-note dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+@media screen and (max-width: 414px) {
+  #access .access-container .access-note dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#access .access-container .access-note dl dt {
+  font-weight: normal;
+  width: auto;
+}
+
+@media screen and (max-width: 414px) {
+  #access .access-container .access-note dl dt {
+    margin-top: 16px;
+  }
+}
+
+#access .access-container .access-note dl dd {
+  margin-left: 16px;
+  width: auto;
 }
 
 #access .access-container .aceess-title {
@@ -129,6 +177,12 @@
 
 #access .access-container .method .detail .detail-title {
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 414px) {
+  #access .access-container .method .detail p:not(:first-of-type) {
+    margin-top: 16px;
+  }
 }
 
 #access .access-container .map {

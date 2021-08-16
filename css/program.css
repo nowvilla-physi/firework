@@ -34,7 +34,7 @@
   background: #f7b52c;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
   #program .program-container .program-contents .program-description .program-title {
     font-size: 1.2rem;
   }
@@ -64,7 +64,7 @@
   padding-right: 8px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
   #program .program-container .program-contents .program-description .program-title .title-items .main {
     font-size: 1.3rem;
     padding-right: 0;
@@ -81,7 +81,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
   #program .program-container .program-contents .program-description .program-title .title-items .sub {
     font-size: 1.0rem;
   }
@@ -109,7 +109,7 @@
   border-radius: 4px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
   #program .program-container .program-contents .program-description .program-title .start-time {
     font-size: 0.7rem;
     top: 8px;
@@ -131,7 +131,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
   #program .program-container .program-contents .program-description .program-detail {
     font-size: 0.8rem;
   }
@@ -152,7 +152,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
   #program .program-container .program-contents .program-description .program-detail .trader {
     font-size: 0.6rem;
   }

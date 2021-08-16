@@ -197,7 +197,7 @@ a:hover {
   width: 40px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
   #footer .footer-wrapper .footer-img {
     display: none;
   }
