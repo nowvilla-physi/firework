@@ -39,7 +39,7 @@ function setup() {
 }
 
 function toTopPage() {
-    window.location.href = '../home.html'
+    window.location.href = '../FireWork/home.html'
 }
 
 function draw() {
