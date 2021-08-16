@@ -35,5 +35,5 @@ class RemainingDays {
 }
 
 $('.reserve-btn').on('click', function () {
-    window.location.href = './FireWork/reserve.html';
+    location.href = './reserve.html';
 });
