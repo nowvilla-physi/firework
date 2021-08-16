@@ -11,6 +11,10 @@ function windowResized() {
         document.documentElement.clientWidth,
         document.documentElement.clientHeight
     );
+    startButton.position(
+        width / 2 - startButton.width / 2,
+        height / 2 - startButton.height / 2
+    )
     this.preStar();
 }
 
@@ -26,7 +30,7 @@ function setup() {
     frameRate(60);
     this.preStar();
 
-    startButton = createButton('星駆花火大会のWebサイトへ');
+    startButton = createButton('星駆花火大会はこちら');
     startButton.position(
         width / 2 - startButton.width / 2,
         height / 2 - startButton.height / 2
