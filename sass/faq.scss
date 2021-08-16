@@ -18,7 +18,8 @@
 
 // faq.
 #faq {
-    padding: 24px 0px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     .accordion-container {
         margin: 16px 0;
@@ -28,6 +29,10 @@
             text-align: left;
             margin-bottom: 12px;
             font-size: 1.125rem;
+
+            @include mq(sm) {
+                font-size: 0.9rem;
+            }
 
             &:last-of-type {
                 margin-bottom: 0;
@@ -76,6 +81,12 @@
             background: $main-color;
             margin: 0 2% 2% 2%;
             padding: 2% 4%;
+            border-radius: 4px;
+
+            @include mq(sm) {
+                margin: 0 4% 4% 4%;
+                padding: 4% 6%;
+            }
 
             a {
                 text-decoration: underline;

@@ -10,7 +10,8 @@
 }
 
 #faq {
-  padding: 24px 0px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 #faq .accordion-container {
@@ -22,6 +23,12 @@
   text-align: left;
   margin-bottom: 12px;
   font-size: 1.125rem;
+}
+
+@media screen and (max-width: 414px) {
+  #faq .accordion-container .accordion-item {
+    font-size: 0.9rem;
+  }
 }
 
 #faq .accordion-container .accordion-item:last-of-type {
@@ -75,6 +82,14 @@
   background: #f7b52c;
   margin: 0 2% 2% 2%;
   padding: 2% 4%;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 414px) {
+  #faq .accordion-container .answer {
+    margin: 0 4% 4% 4%;
+    padding: 4% 6%;
+  }
 }
 
 #faq .accordion-container .answer a {

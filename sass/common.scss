@@ -224,10 +224,26 @@ a {
     order: -1;
     cursor: pointer;
     border-radius: 4px 4px 0 0;
+
+    @include mq(md) {
+        font-size: 0.9rem;
+    }
+
+    @include mq(sm) {
+        font-size: 0.7rem;
+    }
 }
 
 .tab-label:not(:last-of-type) {
     margin-right: 16px;
+
+    @include mq(md) {
+        margin-right: 12px;
+    }
+
+    @include mq(sm) {
+        margin-right: 6px;
+    }
 }
 
 .tab-contents {

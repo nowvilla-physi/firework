@@ -248,8 +248,32 @@ a:hover {
   border-radius: 4px 4px 0 0;
 }
 
+@media screen and (max-width: 768px) {
+  .tab-label {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .tab-label {
+    font-size: 0.7rem;
+  }
+}
+
 .tab-label:not(:last-of-type) {
   margin-right: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .tab-label:not(:last-of-type) {
+    margin-right: 12px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .tab-label:not(:last-of-type) {
+    margin-right: 6px;
+  }
 }
 
 .tab-contents {
