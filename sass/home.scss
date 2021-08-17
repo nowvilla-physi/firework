@@ -102,7 +102,7 @@
 
     .reserve-btn {
         position: fixed;
-        bottom: 20%;
+        top: 50%;
         right: 0;
         writing-mode: vertical-rl;
         border-top: 4px solid $main-color;
@@ -113,6 +113,7 @@
         color: $main-color;
         font-weight: bold;
         padding: 16px 8px;
+        transform: translateX(-50%);
         cursor: pointer;
         white-space: nowrap;
         transition: all 500ms ease;
