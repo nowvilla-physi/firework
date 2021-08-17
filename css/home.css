@@ -127,8 +127,8 @@
   color: #f7b52c;
   font-weight: bold;
   padding: 16px 8px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   cursor: pointer;
   white-space: nowrap;
   -webkit-transition: all 500ms ease;
