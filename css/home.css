@@ -115,7 +115,7 @@
 #main .reserve-btn {
   position: fixed;
   top: 50%;
-  left: 0;
+  right: 0;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -127,8 +127,6 @@
   color: #f7b52c;
   font-weight: bold;
   padding: 16px 8px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   cursor: pointer;
   white-space: nowrap;
   -webkit-transition: all 500ms ease;
