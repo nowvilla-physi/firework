@@ -113,6 +113,7 @@
         color: $main-color;
         font-weight: bold;
         padding: 16px 8px;
+        transform: translateY(-50%);
         cursor: pointer;
         white-space: nowrap;
         transition: all 500ms ease;
