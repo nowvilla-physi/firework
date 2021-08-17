@@ -115,7 +115,7 @@
 #main .reserve-btn {
   position: fixed;
   top: 50%;
-  right: 0;
+  left: 0;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
