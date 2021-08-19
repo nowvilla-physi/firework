@@ -107,6 +107,10 @@
   width: 100vw;
 }
 
+#header .hamburger-menu {
+  top: 56px;
+}
+
 #main {
   background-color: #11335f;
   padding-bottom: 32px;

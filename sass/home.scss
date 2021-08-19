@@ -93,6 +93,10 @@
     .building-image {
         @include insertBuildingImg('building-black.svg');
     }
+
+    .hamburger-menu {
+        top: 56px;
+    }
 }
 
 // main.
