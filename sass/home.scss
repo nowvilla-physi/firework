@@ -123,6 +123,10 @@
         transition: all 500ms ease;
         z-index: 20;
 
+        @include mq(sm) {
+            right: 5%;
+        }
+
         &::after {
             content: "";
             display: inline-block;
@@ -383,7 +387,7 @@
         display: flex;
         justify-content: space-between;
 
-        @include mq(sm) {
+        @include mq(md) {
             flex-direction: column;
         }
 
@@ -396,7 +400,13 @@
             width: 216px;
             transition: all 300ms;
 
+            @include mq(md) {
+                width: 100%;
+                margin-top: 16px;
+            }
+
             @include mq(sm) {
+                height: 108px;
                 width: 100%;
                 margin-top: 8px;
             }
@@ -415,7 +425,7 @@
                 font-size: 1.25rem;
                 font-weight: bold;
 
-                @include mq(sm) {
+                @include mq(md) {
                     font-size: 1.0rem;
                 }
             }
