@@ -140,12 +140,6 @@
   z-index: 20;
 }
 
-@media screen and (max-width: 414px) {
-  #main .reserve-btn {
-    right: 5%;
-  }
-}
-
 #main .reserve-btn::after {
   content: "";
   display: inline-block;
