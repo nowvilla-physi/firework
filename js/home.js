@@ -1,6 +1,6 @@
 $(document).ready(function () {
     const remainingDays = new RemainingDays(
-        new Date(2021, 7, 29)
+        new Date(2022, 7, 12)
     );
 
     const now = new Date();
@@ -35,5 +35,5 @@ class RemainingDays {
 }
 
 $('.reserve-btn').on('click', function () {
-    window.location.href = '../FireWork/reserve.html';
+    window.location.href = '../firework/reserve.html';
 });
